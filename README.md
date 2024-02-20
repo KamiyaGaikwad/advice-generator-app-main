@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/KamiyaGaikwad/advice-generator-app-main)
-- Live Site URL: [Netlify](https://frontend-advice-generator-app-challenge.netlify.app/)
+- Live Site URL: [Netlify](https://frontend-advicegeneratorapp-challenge.netlify.app/)
 
 
 ## My process
