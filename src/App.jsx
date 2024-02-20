@@ -29,7 +29,7 @@ export default function App() {
         <p className="advice">“{advice}”</p>
         <img src={divider} alt="divider" className="divider" />
         <div className="dice-div">
-          <img src={dice} alt="dice" className="dice" onClick={() => fetchData()}</img>} />
+          <img src={dice} alt="dice" className="dice" onClick={() => fetchData()} />
         </div>
       </main>
 
