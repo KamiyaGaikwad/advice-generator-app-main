@@ -7,8 +7,7 @@ export default function App() {
   const [advice, setAdvice] = useState("");
   const [adviceId, setAdviceId] = useState();
 
-  useEffect(() => {
-    const fetchData = async () => {
+  const fetchData = async () => {
       try {
         const response = await fetch("https://api.adviceslip.com/advice");
         const jsonData = await response.json();
@@ -19,6 +18,7 @@ export default function App() {
       }
     };
 
+  useEffect(() => {
     fetchData();
   }, []);
 
@@ -29,7 +29,7 @@ export default function App() {
         <p className="advice">“{advice}”</p>
         <img src={divider} alt="divider" className="divider" />
         <div className="dice-div">
-          <img src={dice} alt="dice" className="dice" />
+          <img src={dice} alt="dice" className="dice" onClick={() => fetchData()}</img>} />
         </div>
       </main>
 
